@@ -1,0 +1,52 @@
+{
+  "model_name": "TF-IDF + Logistic Regression",
+  "dataset_source": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
+  "dataset_rows": 5572,
+  "features": "TF-IDF with unigrams and bigrams",
+  "max_features": 5000,
+  "test_size": 0.2,
+  "random_state": 42,
+  "metrics": {
+    "accuracy": 0.9758,
+    "precision": 0.9013,
+    "recall": 0.9195,
+    "f1_score": 0.9103
+  },
+  "classification_report": {
+    "ham": {
+      "precision": 0.9875389408099688,
+      "recall": 0.984472049689441,
+      "f1-score": 0.9860031104199067,
+      "support": 966.0
+    },
+    "spam": {
+      "precision": 0.9013157894736842,
+      "recall": 0.9194630872483222,
+      "f1-score": 0.9102990033222591,
+      "support": 149.0
+    },
+    "accuracy": 0.9757847533632287,
+    "macro avg": {
+      "precision": 0.9444273651418265,
+      "recall": 0.9519675684688815,
+      "f1-score": 0.9481510568710829,
+      "support": 1115.0
+    },
+    "weighted avg": {
+      "precision": 0.9760167439049408,
+      "recall": 0.9757847533632287,
+      "f1-score": 0.9758865974534947,
+      "support": 1115.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      951,
+      15
+    ],
+    [
+      12,
+      137
+    ]
+  ]
+}
